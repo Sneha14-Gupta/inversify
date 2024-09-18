@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rev {
+  color: palegreen;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  font-family: monospace;
+  flex-direction: column;
+}
+
+button {
+  background-image: url(circle-of-arrows-couple.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  margin: 30px;
+  border: none;
+  transition: 0.5 ease;
+  border-radius: 50%;
+  }
+button:hover{
+  background-color: palegreen;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+    height: 40px;
+    width: 40px;
+    transform: rotate(90deg);
+
+}
+h1 {
+  margin: 30px;
+  font-size: 60px;
+  position: relative;
+}
+h1::before{
+  content: "";
+  background-image: url(swap\ \(1\).png);
+  position: absolute;
+  left: -30px;
+  right: 0;
+  bottom:0;
+  top: -10px;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+}
+h5 {
+  margin: 30px;
+  font-size: 20px;
+}
+input {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 5px 5px 5px black;
+}
+
