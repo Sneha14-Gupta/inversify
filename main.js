@@ -7,7 +7,7 @@ BtnEl.addEventListener("click", () => {
 });
 
 InputEl.addEventListener("keypress", (event) => {
-  if (event.key=== "Enter") {
+  if (event.keyCode === 13) {
     const InpValue = InputEl.value;
     const ReverseValue = InpValue.split("").reverse().join("");
     console.log(ReverseValue);

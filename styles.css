@@ -47,7 +47,7 @@ h1 {
   font-size: 60px;
   position: relative;
 }
-h1::before{
+/* h1::before{
   content: "";
   background-image: url(swap\ \(1\).png);
   position: absolute;
@@ -59,7 +59,7 @@ h1::before{
   background-repeat: no-repeat;
   z-index: -1;
 
-}
+} */
 h5 {
   margin: 30px;
   font-size: 20px;
