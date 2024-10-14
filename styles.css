@@ -19,7 +19,7 @@ body {
   flex-direction: column;
 }
 
-button {
+.btn {
   background-image: url(circle-of-arrows-couple.png);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -32,7 +32,8 @@ button {
   transition: 0.5 ease;
   border-radius: 50%;
   }
-button:hover{
+
+.btn:hover{
   background-color: palegreen;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -42,11 +43,13 @@ button:hover{
     transform: rotate(90deg);
 
 }
+
 h1 {
   margin: 30px;
   font-size: 60px;
   position: relative;
 }
+
 /* h1::before{
   content: "";
   background-image: url(swap\ \(1\).png);
@@ -64,11 +67,57 @@ h5 {
   margin: 30px;
   font-size: 20px;
 }
+
 input {
-  height: 40px;
+  /* height: 40px; */
   border-radius: 10px;
   font-size: 1.5rem;
   border: none;
   box-shadow: 5px 5px 5px black;
+  padding: .7rem;
+}
+
+.copyToClip{
+  font-size: 1rem;
+  padding: 0.6rem 0.5rem;
+  margin-left: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  translate:transform 0.5 ease;
+  background-color: #555;
+}
+
+.copyToClip:hover{
+  background-color:palegreen;
+
+}
+.feedback-message {
+  display: none;
+  position: absolute;
+  top: 35rem;
+  bottom: 0;
+  left: 45rem;
+  right: 0;
+}
+
+.error-message{
+  display: none;
+  position: absolute;
+  top: 35rem;
+  bottom: 0;
+  left: 38rem;
+  right: 0;
+}
+
+
+@media screen and (max-width:750px) {
+  h1:after{
+    display:none
+  }
+  h5{
+    font-size:1rem;
+    text-align:center;
+  }
+
 }
 
