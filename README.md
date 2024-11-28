@@ -8,4 +8,4 @@ Perfect for generating reversed text,reverse any text input and copy it to your 
 
 ## Preview:
  
- ![Image](Mockup.png)
+ ![Image](image1.png)
